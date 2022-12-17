@@ -25,3 +25,9 @@ The dataset has the following attributes:
 * **review_headline (string)**: the title of the review
 * **review_body (string)**: the review text
 * **review_date (timestamp)**: the date the review was written
+
+## File Directory
+
+### descriptive_statistics.py
+### data_preprocessing.py
+### machine_learning_models.py
