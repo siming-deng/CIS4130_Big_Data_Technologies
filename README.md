@@ -10,7 +10,7 @@ Amazon Customer Reviews Dataset is one of the public datasets available on AWS. 
 
 The dataset has the following attributes:
 
-* marketplace (string): 2-letter country code of the marketplace where the review was written
+* **marketplace (string)**: 2-letter country code of the marketplace where the review was written
 * customer_id (integer): the random identifier that can be used to aggregate reviews written by a single author
 * review_id (string): the unique id of the review
 * product_id (string): the unique product id the review pertains to
