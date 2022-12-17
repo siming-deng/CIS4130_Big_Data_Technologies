@@ -29,5 +29,8 @@ The dataset has the following attributes:
 ## File Directory
 
 ### descriptive_statistics.py
+> Location of the code for descriptive statistics of the dataset (EDA).
 ### data_preprocessing.py
+> Location of the code for data preprocessing before fitting a machine learning model.
 ### machine_learning_models.py
+> Location of the code for machine learning models and evaluatio of the performance.
