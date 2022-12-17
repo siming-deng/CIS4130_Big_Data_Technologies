@@ -44,14 +44,18 @@ After running descriptive statistics for star_rating, helpful_votes, and total_v
 The review_date column has a minimum date of 1995-06-24 and a maximum date of 2015-08-31. So, this dataset contains 20 years of customer reviews for various product categories. In addition, based on the summary statistics for review_headline and review_body there seem to have emojis and other characters that are not text. Therefore, removing those extraneous emojis and characters is also necessary.
 
 In terms of the text-mining process, there will be 4 steps:
+
 **1. Preprocess data:** 
   - Convert text (review_body) to lowercase, remove unnecessary punctuations, etc. 
   - Tokenization will also apply, which will convert sentences to words.
   - Remove stop words.
   - Stemming: Snowball Stemmer
+  
 **2. Vectorize data:** 
   - Word embedding: TF-IDF
+  
 **3. Feature engineering:**
   - Word count for review_body
+  
 **4. Train classifier:**
   - Logistic Regression
