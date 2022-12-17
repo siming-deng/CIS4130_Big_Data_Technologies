@@ -34,6 +34,8 @@ The dataset has the following attributes:
 > Location of the code for data preprocessing before fitting a machine learning model.
 ### machine_learning_models.py
 > Location of the code for machine learning models and evaluation of the performance.
+### cis_4130_projects_6&7_Siming_Deng.pdf
+> Location of the final report of the project.
 
 ## Summary of the Dataset and Challenges had in Cleaning and Feature Engineering
 
