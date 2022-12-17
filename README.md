@@ -26,6 +26,10 @@ The dataset has the following attributes:
 * **review_body (string)**: the review text
 * **review_date (timestamp)**: the date the review was written
 
+## Technologies and Libraries used
+
+[PySpark](https://spark.apache.org/docs/latest/ml-guide.html), [Amazon EMR Clusters](https://aws.amazon.com/emr/), [Amazon S3 buckets](https://aws.amazon.com/s3/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/), [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), and [NLTK](https://www.nltk.org/)
+
 ## File Directory
 
 ### descriptive_statistics.py
