@@ -59,3 +59,11 @@ In terms of the text-mining process, there will be 4 steps:
   
 **4. Train classifier:**
   - Logistic Regression
+
+## Coding and Machine Learning
+
+The goal of this project is to predict Amazon’s product star ratings based on the customers’ review comments and other related factors. Based on the observation from exploratory data analysis, we can see that there are mostly star ratings of 5 and very few star ratings of 1-4. Since most people would consider a star rating of 4+ a good product, it is better to consider predicting the star ratings as a binary classification problem with star ratings 1-3 labeled as 0 and star ratings 4-5 labeled as 1.
+
+After looking at the variables in the dataset and the correlation matrix, there are a few variables selected to be the predictors and star_rating being the dependent variable. The predictor variables considered are review_body, verified_purchase, product_category, and helpful_votes. Another predictor variable is the new feature generated as the word count of review_body.
+
+For a binary classification problem, we do have a couple of machine learning algorithms to choose from. For example, logistic regression is one of the most popular and common machine learning algorithms used to solve binary classification problems. In logistic regression, a logit transformation is applied to the odds—that is, the probability of success divided by the probability of failure. This is commonly known as the log odds or the natural logarithm of odds. For the purpose of the project, a logistic regression model is applied to predict the star ratings, whether it is <=3 or >3. 
