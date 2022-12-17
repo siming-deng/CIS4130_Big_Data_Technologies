@@ -11,17 +11,17 @@ Amazon Customer Reviews Dataset is one of the public datasets available on AWS. 
 The dataset has the following attributes:
 
 * **marketplace (string)**: 2-letter country code of the marketplace where the review was written
-* customer_id (integer): the random identifier that can be used to aggregate reviews written by a single author
-* review_id (string): the unique id of the review
-* product_id (string): the unique product id the review pertains to
-* product_parent (integer): the random identifier that can be used to aggregate reviews for the same product
-* product_title (string): title of the product
-* product_category (string): broad product category that can be used to group reviews
-* star_rating (string): the 1-5 star rating of the review
-* helpful_votes (integer): number of helpful votes
-* total_votes (integer): number of total votes the review received
-* vine (string): review was written as part of the Vine program
-* verified_purchase (string): the review is on a verified purchase or not
-* review_headline (string): the title of the review
-* review_body (string): the review text
-* review_date (timestamp): the date the review was written
+* **customer_id (integer)**: the random identifier that can be used to aggregate reviews written by a single author
+* **review_id (string)**: the unique id of the review
+* **product_id (string)**: the unique product id the review pertains to
+* **product_parent (integer)**: the random identifier that can be used to aggregate reviews for the same product
+* **product_title (string)**: title of the product
+* **product_category (string)**: broad product category that can be used to group reviews
+* **star_rating (string)**: the 1-5 star rating of the review
+* **helpful_votes (integer)**: number of helpful votes
+* **total_votes (integer)**: number of total votes the review received
+* **vine (string)**: review was written as part of the Vine program
+* **verified_purchase (string)**: the review is on a verified purchase or not
+* **review_headline (string)**: the title of the review
+* **review_body (string)**: the review text
+* **review_date (timestamp)**: the date the review was written
