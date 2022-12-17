@@ -67,3 +67,15 @@ The goal of this project is to predict Amazon’s product star ratings based on 
 After looking at the variables in the dataset and the correlation matrix, there are a few variables selected to be the predictors and star_rating being the dependent variable. The predictor variables considered are review_body, verified_purchase, product_category, and helpful_votes. Another predictor variable is the new feature generated as the word count of review_body.
 
 For a binary classification problem, we do have a couple of machine learning algorithms to choose from. For example, logistic regression is one of the most popular and common machine learning algorithms used to solve binary classification problems. In logistic regression, a logit transformation is applied to the odds—that is, the probability of success divided by the probability of failure. This is commonly known as the log odds or the natural logarithm of odds. For the purpose of the project, a logistic regression model is applied to predict the star ratings, whether it is <=3 or >3. 
+
+## Project Summary and Main Conclusions
+
+Logistic Regression is used to classify whether the star rating is <=3 or >3 using predictors such as the review body text, helpful_votes, product_categories, verified_purchase, and word counts. Hyperparameter tuning is implemented by setting regParam = [0, 0.2, 0.4, 0.6, 0.8, 1] and elasticNetParam = [0, 0.5, 1]. The total number of models being tested is 18. 
+
+Our best model has an elasticNetParam of 0 and regParam of 0.2. That means that our model is reduced to a ridge regression model. The best model after hyperparameter tuning has an AUC of 0.89 with an accuracy of 0.83, a precision of 0.83, a recall of 0.99, and an f1 score of 0.9. This means that this model has a good performance on recall—the model can classify 99% of all the >3 ratings correctly. If we want to focus on predicting >3 ratings correctly then this would be a good model for that. If we want to focus on getting higher correct prediction for all predicted positive samples then we want to have higher precision. Depending on what purpose we want to accomplish we can modify and/or improve our model.
+
+**Some future improvements include**
+
+1. Try different machine learning models and hyperparameter tuning (e.g. Random Forest Classifier and/or Multinomial Naive Bayes)
+2. Increase the sample size, but that would also increase the computational cost
+3. Try different data preprocessing methods for text data (e.g. Lemmatization)
