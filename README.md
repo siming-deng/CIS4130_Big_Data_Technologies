@@ -34,3 +34,24 @@ The dataset has the following attributes:
 > Location of the code for data preprocessing before fitting a machine learning model.
 ### machine_learning_models.py
 > Location of the code for machine learning models and evaluatio of the performance.
+
+## Summary of the Dataset and Challenges had in Cleaning and Feature Engineering
+
+The Amazon Customers Review Dataset has a total of 150,962,278 rows of records with 15 columns. All features contain null values with review_body having the highest amount of null values (18,788) and our target variable—star_raing—has 2263 null values. Since 18,788 compared to our whole dataset is a small amount of data and no other way to obtain the data back, dropping the null values seems necessary in this case. After dropping the null values for review_body and star_rating, there are still 384 null values for review_headline and 4 null values for product_title. 
+
+After running descriptive statistics for star_rating, helpful_votes, and total_votes, the average star_rating is 4.2 with a standard deviation of 1.3 and maximum star_rating 5; the average helpful_votes is 1.9 with a standard deviation of 19.5 and maximum helpful_votes of 47,524; the average total_votes is 2.5 with a standard deviation of 21.2 and maximum total_votes of 48,362. Based on the statistics, star_rating seems to have a left-skewed distribution, and helpful_votes and total_votes seem to have right-skewed distribution.
+
+The review_date column has a minimum date of 1995-06-24 and a maximum date of 2015-08-31. So, this dataset contains 20 years of customer reviews for various product categories. In addition, based on the summary statistics for review_headline and review_body there seem to have emojis and other characters that are not text. Therefore, removing those extraneous emojis and characters is also necessary.
+
+In terms of the text-mining process, there will be 4 steps:
+**1. Preprocess data:** 
+  - Convert text (review_body) to lowercase, remove unnecessary punctuations, etc. 
+  - Tokenization will also apply, which will convert sentences to words.
+  - Remove stop words.
+  - Stemming: Snowball Stemmer
+**2. Vectorize data:** 
+  - Word embedding: TF-IDF
+**3. Feature engineering:**
+  - Word count for review_body
+**4. Train classifier:**
+  - Logistic Regression
