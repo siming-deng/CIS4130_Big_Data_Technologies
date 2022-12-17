@@ -33,7 +33,7 @@ The dataset has the following attributes:
 ### data_preprocessing.py
 > Location of the code for data preprocessing before fitting a machine learning model.
 ### machine_learning_models.py
-> Location of the code for machine learning models and evaluatio of the performance.
+> Location of the code for machine learning models and evaluation of the performance.
 
 ## Summary of the Dataset and Challenges had in Cleaning and Feature Engineering
 
